@@ -1,5 +1,10 @@
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello, World!</h1>;
+  return (
+    <div className="bg-purple-200">
+      <h1 className="text-xl">Hello, World!</h1>
+      <button className="btn">클릭!</button>
+    </div>
+  );
 }
 
 export default App;
