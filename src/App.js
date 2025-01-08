@@ -8,6 +8,7 @@ import { GithubProvider } from "./context/github/GithubContext";
 
 function App() {
   return (
+    //여기가 전역으로 context를 적용하는 부분 : children은 App.js의 자식 컴포넌트들
     <GithubProvider>
       <BrowserRouter>
         <div className="flex flex-col justify-between h-screen">
