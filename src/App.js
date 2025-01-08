@@ -1,7 +1,14 @@
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1>헬로우 월드!</h1>
+    <div className="flex flex-col justify-between h-screen">
+      <Navbar title="Github Finder" />
+
+      <main>Content</main>
+
+      <Footer />
     </div>
   );
 }
