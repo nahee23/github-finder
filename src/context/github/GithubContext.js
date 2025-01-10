@@ -9,6 +9,8 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 export const GithubProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false); //true면 로딩중, false면 로딩완료
+  //유저들 클리어
+  const clearUsers = () => setUsers([]);
   //테스트 유저 리스트 -> 키워드로 유저 찾기
   const searchUsers = (text) => {
     setLoading(true); //로딩중
@@ -32,6 +34,7 @@ export const GithubProvider = ({ children }) => {
         users,
         loading,
         searchUsers,
+        clearUsers,
       }}
     >
       {children}
